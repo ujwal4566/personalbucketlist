@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2e6e5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #72d8d7;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        main {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #72d8d7;
+            border-radius: 11px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .bucket-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bucket-list li {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.4s, color 0.4s;
+            border-radius: 6px;
+        }
+
+        .bucket-list li .icon {
+            margin-right: 0.5rem;
+        }
+
+        .bucket-list li:hover {
+            background-color: #4cafaf;
+            color: rgba(21, 3, 3, 0);
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #000000;
+        }
+
+        @media (max-width: 766px) {
+            main {
+                padding: 0.6rem;
+            }
+
+            .bucket-list li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Bucket List</h1>
+    </header>
+    <main>
+        <ul class="bucket-list">
+            <li><span class="icon">✨</span> Visit Switzerland</li>
+            <li><span class="icon">✔</span> Learn a new coding language</li>
+            <li><span class="icon">🌟</span> Witness Northern Lights</li>
+            <li><span class="icon">💫</span> World Tour</li>
+            <li><span class="icon">🔥</span> Buy Lamborghini</li>
+        </ul>
+    </main>
+    <footer>
+        <p>Created by Ujwal<span>.....</span></p>
+    </footer>
+</body>
+</html>
